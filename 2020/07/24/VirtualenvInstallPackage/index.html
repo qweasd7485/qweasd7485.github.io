@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/program_lyX_icon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/program_aUx_icon.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="#name{     line-height: 1.5em;     color: brown;     font-size: large;     font-weight:bold; } p{line-height: 1em;}   運行環境OS:Windows 7 Professional 64bit Python 3.8.2   問題簡述於虛擬環境中安裝套件「pymssql」發生錯誤：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="虛擬環境安裝套件錯誤問題解決">
+<meta property="og:url" content="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/index.html">
+<meta property="og:site_name" content="程式技術書">
+<meta property="og:description" content="#name{     line-height: 1.5em;     color: brown;     font-size: large;     font-weight:bold; } p{line-height: 1em;}   運行環境OS:Windows 7 Professional 64bit Python 3.8.2   問題簡述於虛擬環境中安裝套件「pymssql」發生錯誤：">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/InstallPackageError.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/PymssqlPackageDownload.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/InstallLocalPackage.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/InstallSucess.png">
+<meta property="article:published_time" content="2020-07-24T03:41:05.000Z">
+<meta property="article:modified_time" content="2020-07-24T03:42:33.167Z">
+<meta property="article:author" content="Lester Shih">
+<meta property="article:tag" content="Django">
+<meta property="article:tag" content="虛擬環境">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/InstallPackageError.png">
+
+<link rel="canonical" href="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>虛擬環境安裝套件錯誤問題解決 | 程式技術書</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">程式技術書</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lester Shih">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程式技術書">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          虛擬環境安裝套件錯誤問題解決
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2020-07-24 11:41:05 / 修改時間：11:42:33" itemprop="dateCreated datePublished" datetime="2020-07-24T11:41:05+08:00">2020-07-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Django%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">Django相關</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <style type="text/css">
+#name{
+    line-height: 1.5em;
+    color: brown;
+    font-size: large;
+    font-weight:bold;
+}
+p{line-height: 1em;}
+</style>
+
+<h2 id="運行環境"><a href="#運行環境" class="headerlink" title="運行環境"></a>運行環境</h2><p>OS:Windows 7 Professional 64bit</p>
+<p>Python 3.8.2</p>
+
+<hr>
+<h2 id="問題簡述"><a href="#問題簡述" class="headerlink" title="問題簡述"></a>問題簡述</h2><p>於虛擬環境中安裝套件「pymssql」發生錯誤：</p>
+
+<img src="/2020/07/24/VirtualenvInstallPackage/InstallPackageError.png" class="">
+
+<h2 id="問題解決"><a href="#問題解決" class="headerlink" title="問題解決"></a>問題解決</h2><p>可事先下載Package檔，以pymssql為例：</p>
+
+<img src="/2020/07/24/VirtualenvInstallPackage/PymssqlPackageDownload.png" class="">
+
+<p>根據自己作業系統環境下載相對應版本(一般Python虛擬環境套件副檔名均為whl)！</p>
+
+<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pymssql" target="_blank" rel="noopener">Python外部套件網址</a></p>
+<p>下載完成後，將該檔放置於自己想要放的目錄(此放置於C:\Users\yu64859\Documents\Django Projects)接著透過安裝本地端套件語法安裝：</p>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">...&gt;pip instal 套件所在路徑(須包含套件檔名)</span><br></pre></td></tr></table></figure>
+
+<p>以此為例：</p>
+
+<img src="/2020/07/24/VirtualenvInstallPackage/InstallLocalPackage.png" class="">
+
+<p>本地安裝的套件於pip freeze套件清單回顯示如下：</p>
+
+<img src="/2020/07/24/VirtualenvInstallPackage/InstallSucess.png" class="">
+
+<p><a href="https://zhuanlan.zhihu.com/p/38996653" target="_blank" rel="noopener">虛擬環境安裝本地套件方法教學來源網址</a></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Django/" rel="tag"># Django</a>
+              <a href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/" rel="tag"># 虛擬環境</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/30/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/24/JSWindowsClose/" rel="next" title="利用JS將子視窗網頁關閉">
+      利用JS將子視窗網頁關閉 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#運行環境"><span class="nav-number">1.</span> <span class="nav-text">運行環境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#問題簡述"><span class="nav-number">2.</span> <span class="nav-text">問題簡述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#問題解決"><span class="nav-number">3.</span> <span class="nav-text">問題解決</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Lester Shih</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+      
+        <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+        <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+        <div class="widget-wrap">
+          <h3 class="widget-title">標籤雲</h3>
+            <div id="myCanvasContainer" class="widget tagcloud">
+              <canvas width="200" height="250" id="resCanvas" style="width=100%">
+                <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Andorid/" rel="tag">Andorid</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Eclipse/" rel="tag">Eclipse</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hello-World/" rel="tag">Hello World</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-7/" rel="tag">Windows 7</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%90%E8%A6%96%E7%AA%97%E7%B6%B2%E9%A0%81%E9%97%9C%E9%96%89/" rel="tag">子視窗網頁關閉</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%95%AB%E9%9D%A2%E6%8A%95%E5%BD%B1/" rel="tag">畫面投影</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88/" rel="tag">網頁設計</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/" rel="tag">虛擬環境</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/" rel="tag">虛擬環境建置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%A3%E6%8E%A5SQL-Server/" rel="tag">連接SQL Server</a><span class="tag-list-count">1</span></li></ul>
+              </canvas>
+            </div>
+        </div>
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lester Shih</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 強力驅動
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
