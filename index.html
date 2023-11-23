@@ -193,7 +193,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-01-26 17:33:33" itemprop="dateModified" datetime="2022-01-26T17:33:33+08:00">2022-01-26</time>
+                <time title="修改時間：2023-11-14 09:04:55" itemprop="dateModified" datetime="2023-11-14T09:04:55+08:00">2023-11-14</time>
               </span>
 
           
@@ -260,7 +260,8 @@ p{line-height: 1em;}
 </li>
 </ol>
 <h3 id="Hexo-1"><a href="#Hexo-1" class="headerlink" title="Hexo"></a>Hexo</h3><ol>
-<li><a href="/2020/04/30/hello-world/" title="Hexo安裝與指令">Hexo安裝與指令</a>
+<li><a href="/2023/11/01/hello-world/" title="Hexo安裝與指令">Hexo安裝與指令</a></li>
+<li><a href="/2022/03/15/hexoNextTop/" title="Hexo主題Next主畫面文章置頂">Hexo主題Next主畫面文章置頂</a>
 
 </li>
 </ol>
@@ -271,14 +272,718 @@ p{line-height: 1em;}
 
 </li>
 </ol>
-<h3 id="Windows問題處理相關"><a href="#Windows問題處理相關" class="headerlink" title="Windows問題處理相關"></a>Windows問題處理相關</h3><ol>
-<li><a href="/2020/09/18/Windows7CannotLoad/" title="Windows開機時出現卡於「左上白色底線閃爍」問題">Windows開機時出現卡於「左上白色底線閃爍」問題</a>
+<h3 id="Spring-Boot"><a href="#Spring-Boot" class="headerlink" title="Spring Boot"></a>Spring Boot</h3><ol>
+<li><a href="/2023/11/01/SpringBootSetupEclipse/" title="使用Eclipse開發Spring Boot網站專案">使用Eclipse開發Spring Boot網站專案</a>
 
+</li>
+</ol>
+<h3 id="Windows問題處理相關"><a href="#Windows問題處理相關" class="headerlink" title="Windows問題處理相關"></a>Windows問題處理相關</h3><ol>
+<li><a href="/2020/09/18/Windows7CannotLoad/" title="Windows開機時出現卡於「左上白色底線閃爍」問題">Windows開機時出現卡於「左上白色底線閃爍」問題</a></li>
+<li><a href="/2022/03/15/WindowsXPEin2T/" title="透過XPE安裝Windows XP於2T硬碟上(未完成)">透過XPE安裝Windows XP於2T硬碟上(未完成)</a>
+
+</li>
+</ol>
+<h3 id="Xampp"><a href="#Xampp" class="headerlink" title="Xampp"></a>Xampp</h3><ol>
+<li><a href="/2022/03/15/XamppAdmin404/" title="Xampp進入Admin後端控制網頁404問題">Xampp進入Admin後端控制網頁404問題</a>
 
 
 </li>
 </ol>
 
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/11/01/SpringBootSetupEclipse/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lester Shih">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程式技術書">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/11/01/SpringBootSetupEclipse/" class="post-title-link" itemprop="url">使用Eclipse開發Spring Boot網站專案</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2023-11-01 16:14:27" itemprop="dateCreated datePublished" datetime="2023-11-01T16:14:27+08:00">2023-11-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-11-23 13:28:50" itemprop="dateModified" datetime="2023-11-23T13:28:50+08:00">2023-11-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Spring-Boot%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">Spring Boot相關</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <style type="text/css">
+#name{
+    line-height: 1.5em;
+    color: brown;
+    font-size: large;
+    font-weight:bold;
+}
+p{line-height: 1.5em;}
+</style>
+
+<h4 id="運行開發環境與網頁技術"><a href="#運行開發環境與網頁技術" class="headerlink" title="運行開發環境與網頁技術"></a>運行開發環境與網頁技術</h4><p>OS:Windows 10 Professional 64bit</p>
+<p>IDE:Eclipse IDE for Eclipse Committers</p>
+<p>Web:Spring Boot</p>
+<p>Code:Java</p>
+<p>Project:Maven Project</p>
+
+<h4 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h4><p>1.Eclipse若要開發Spring Boot專案，需到套件市集將開發Spring Boot的套件下載並安裝；開啟Eclipse後->上方功能區Help->選項Marketplace...：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/EclipseMarketplace.png" class="">
+
+<p>2.搜尋關鍵字Spring後，出現Spring Tools 4(如紅框處)，進行安裝：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/Marketplace.png" class="">
+
+<p>3.套件安裝完畢後，開始建立專案；Spring Boot建立專案的方式有兩種：</p>
+<p>3-1.Spring 的官方網站提供了實用的工具，叫做「Spring Initializr」。它能夠幫助我們快速地產生全新的 Spring Boot 專案，先到該頁面，以下是它的頁面：</p>
+
+<p>網站聯結：<a href="https://start.spring.io/" target="_blank" rel="noopener">Spring Initializr</a></p>
+<table border="1" cellpadding="5" style="text-align:center;">
+  <tr>
+    <th>項目</th>
+    <th>內容</th>
+  </tr>
+  <tr>
+    <td>Project 專案管理方式</td>
+    <td>Maven</td>
+  </tr>
+  <tr>
+    <td>Language 程式語言</td>
+    <td>Java</td>
+  </tr>
+  <tr>
+    <td>Project Metadata 專案設定</td>
+    <td>團隊名稱、專案名稱等等，依情況設定</td>
+  </tr>
+  <tr>
+    <td>Packaging 專案壓縮產出副檔格式</td>
+    <td>Jar</td>
+  </tr>
+  <tr>
+    <td>Java 版本</td>
+    <td>11</td>
+  </tr>
+</table>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/SpringInitializr.PNG" class="">
+
+<p>3-2.若使用Eclipse進行開發，則使用Eclipse建立專案：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/EclipseChooseNewSpringBootProject.png" class="">
+
+<p>接續進行專案細節設定，基本上與3-1一樣，設定完成後「Next」：</p>
+
+<table border="1" cellpadding="5" style="text-align:center;">
+  <tr>
+    <th>項目</th>
+    <th>內容</th>
+  </tr>
+  <tr>
+    <td>Name 專案名稱</td>
+    <td>依情況設定</td>
+  </tr>
+  <tr>
+    <td>Type 專案管理種類</td>
+    <td>Maven</td>
+  </tr>
+  <tr>
+    <td>Packaging 專案壓縮產出副檔格式</td>
+    <td>Jar</td>
+  </tr>
+  <tr>
+    <td>Java Version</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>Language 程式語言</td>
+    <td>Java</td>
+  </tr> 
+</table>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/NewSpringBootProject.png" class="">
+
+<p>Spring Boot版本：3.1.5，下方勾選「Spring Web」->「Finish」：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/NewSpringBootProject2.png" class="">
+
+<p>4.Finish後->Eclipse會產出專案，查看左方的專案檔案總管就會出現剛剛建立專案；一開始可能只有「src」和「target」資料夾，注意Finish後電腦需有連接網際網路，待約1-5分鐘就會出現Spring Boot完整專案，如下圖：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/SpringBootFile.PNG" class="">
+
+<p>5.Spring Boot屬於MVC架構，可先建立一Controller讓專案Hello World：</p>
+<p>5-1.展開左方專案檔案總管，於資料夾「src/main/java」中Package「com.example.demo」(Package名稱可依照建立專案時設定而有所不同)按下右鍵進行New一個Class，如下圖：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/NewClass.png" class="">
+
+<p style="color:red;">5-2.注：下圖紅框處勿勾選</p>
+<p>(下圖已經建立過所以會顯示Type already exists.)</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/NewClassGUI.png" class="">
+
+<p>5-3.程式碼如下圖：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/IndexController.PNG" class="">
+
+<p>5-4.專案右鍵->Run As->Spring Boot App：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/RunAs.png" class="">
+
+<p>5-5.下方Console會顯示執行結果，顯示Started XXXXXXXXXX in XXX seconds就表示成功運行了：</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/Console.png" class="">
+
+<p>5-6.開啟瀏覽器進行瀏覽「http://localhost:8080」：</p>
+
+<p>如沒有問題，會成功出現以下畫面。</p>
+
+<img src="/2023/11/01/SpringBootSetupEclipse/Result.PNG" class="">
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/11/01/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lester Shih">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程式技術書">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/11/01/hello-world/" class="post-title-link" itemprop="url">Hexo</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2023-11-01 08:30:27" itemprop="dateCreated datePublished" datetime="2023-11-01T08:30:27+08:00">2023-11-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2022-01-11 14:57:46" itemprop="dateModified" datetime="2022-01-11T14:57:46+08:00">2022-01-11</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/04/21/DjangoEclipseNewProject/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lester Shih">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程式技術書">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/21/DjangoEclipseNewProject/" class="post-title-link" itemprop="url">Eclipse 新建 Django 專案</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2022-04-21 13:53:07" itemprop="dateCreated datePublished" datetime="2022-04-21T13:53:07+08:00">2022-04-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2022-06-09 08:15:56" itemprop="dateModified" datetime="2022-06-09T08:15:56+08:00">2022-06-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Django%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">Django相關</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <style type="text/css">
+#name{
+    line-height: 1.5em;
+    color: brown;
+    font-size: large;
+    font-weight:bold;
+}
+p{line-height: 1em;}
+</style>
+
+<h2 id="運行環境"><a href="#運行環境" class="headerlink" title="運行環境"></a>運行環境</h2><p>OS:Windows 10 Professional 64bit/Windows 7 Professional 64bit</p>
+<p>Python 3.8.2</p>
+<p>Eclipse IDE for Committers Ver.2019-12(4.14.0)</p>
+
+<hr>
+<h2 id="新增步驟"><a href="#新增步驟" class="headerlink" title="新增步驟"></a>新增步驟</h2><h3 id="建立虛擬環境"><a href="#建立虛擬環境" class="headerlink" title="建立虛擬環境"></a>建立虛擬環境</h3><p>首先建立虛擬環境，請參考</p>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/03/15/XamppAdmin404/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lester Shih">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程式技術書">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/15/XamppAdmin404/" class="post-title-link" itemprop="url">Xampp進入Admin後端控制網頁404問題</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2022-03-15 15:14:47" itemprop="dateCreated datePublished" datetime="2022-03-15T15:14:47+08:00">2022-03-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2022-03-17 10:11:58" itemprop="dateModified" datetime="2022-03-17T10:11:58+08:00">2022-03-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Apache%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">Apache相關</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <style type="text/css">
+#name{
+    line-height: 1.5em;
+    color: brown;
+    font-size: large;
+    font-weight:bold;
+}
+p{line-height: 1em;}
+</style>
+
+<h2 id="運行環境"><a href="#運行環境" class="headerlink" title="運行環境"></a>運行環境</h2><p>OS:Windows 7 Professional 64bit</p>
+
+<hr>
+<h2 id="問題簡述"><a href="#問題簡述" class="headerlink" title="問題簡述"></a>問題簡述</h2><p>Xampp安裝完畢後，進入Xampp後端管理台顯示404，如下兩圖：</p>
+
+<p>運行Xampp後，點擊「Admin」(紅框處)：</p>
+<img src="/2022/03/15/XamppAdmin404/XamppAdmin.png" class="">
+
+<p>接續系統會自動透過預設瀏覽器進入Xampp後端管理台，卻顯示404錯誤：</p>
+<img src="/2022/03/15/XamppAdmin404/localhost404.png" class="">
+
+<h2 id="問題解決"><a href="#問題解決" class="headerlink" title="問題解決"></a>問題解決</h2><p>STEP 1.主要問題原因為port衝突，若Xampp預設80與443已被其他程式占用就會發生此問題。</p>
+
+<p>STEP 2.修改Xampp所使用的Port，於非運行狀態點擊Apache列的「Config」->第一個「Apache(httpd.conf)」與第二個「Apache(httpd-ssl.conf)」。</p>
+
+<img src="/2022/03/15/XamppAdmin404/configList.png" class="">
+
+<p>STEP 3.接著會顯示一個筆記本視窗，依序找尋「Listen」字眼。</p>
+
+<img src="/2022/03/15/XamppAdmin404/Listen.png" class="">
+
+<p>STEP 4.根據步驟二所選相對應檔案如下表進行修改參數：</p>
+<p>PS.基本上修改成下表Port值，倘若依然被其他程式占用可以設為自己想要的；但要注意日後撰寫程式與運行Port上面相關的設定!!!</p>
+<table border="1" cellpadding="5" style="text-align:center;">
+  <tr>
+    <th>config所屬類型</th>
+    <th>原先Port</th>
+    <th>修改Port</th>
+  </tr>
+  <tr>
+    <td>Apache(httpd.conf)</td>
+    <td>80</td>
+    <td>8000</td>
+  </tr>
+  <tr>
+    <td>Apache(httpd-ssl.conf)</td>
+    <td>443</td>
+    <td>4433</td>
+  </tr>
+</table>
+
+<p>STEP 5.在一次確認進入Xampp後端管理台是否顯示404。</p>
+
+<p>STEP 6.倘若依然顯示404，進一步到Xampp控制盤右方的「Config」，如下圖紅框處：</p>
+
+<img src="/2022/03/15/XamppAdmin404/XamppConfig.png" class="">
+
+<p>STEP 7.接續顯示一個Xampp Config Panel(可能依Xampp版本不一樣而顯示不同畫面格式)，點擊紅框處「Service and Port Settings」：</p>
+
+<img src="/2022/03/15/XamppAdmin404/XamppConfigPanel.png" class="">
+
+<p>STEP 8.依序修改紅框處的Port設定值，須於步驟4所設定的值一致，修改完按下「Save」：</p>
+
+<img src="/2022/03/15/XamppAdmin404/ServiceSettings.png" class="">
+
+<p>STEP 9.基本就可以再次進入Xampp後端管理台，要特別注意的是如果只有運行Apache是只能進入Xampp的介紹網頁，如下圖：</p>
+
+<img src="/2022/03/15/XamppAdmin404/XamppIntro.png" class="">
+
+<p>STEP 10.運行Apache與MySQL後，即可進入Xampp後端管理台，如下圖：</p>
+
+<img src="/2022/03/15/XamppAdmin404/phpMyAdmin.png" class="">
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/03/15/hexoNextTop/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lester Shih">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程式技術書">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/15/hexoNextTop/" class="post-title-link" itemprop="url">Hexo 主題 Next 主畫面文章置頂</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2022-03-15 10:48:03 / 修改時間：11:23:13" itemprop="dateCreated datePublished" datetime="2022-03-15T10:48:03+08:00">2022-03-15</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <style type="text/css">
+#name{
+    line-height: 1.5em;
+    color: brown;
+    font-size: large;
+    font-weight:bold;
+}
+p{line-height: 1em;}
+</style>
+
+<h2 id="運行環境"><a href="#運行環境" class="headerlink" title="運行環境"></a>運行環境</h2><p>OS:Windows 7 Professional 64bit/Windows 10 Professional 64bit</p>
+
+<hr>
+<h2 id="問題簡述"><a href="#問題簡述" class="headerlink" title="問題簡述"></a>問題簡述</h2><p>如標題</p>
+
+<h2 id="問題解決"><a href="#問題解決" class="headerlink" title="問題解決"></a>問題解決</h2><p>STEP 1.若已有安裝hexo-generator-index套件，需先移除。</p>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br></pre></td></tr></table></figure>
+
+<p>STEP 2.安裝hexo-generator-index-pin-top套件。</p>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+
+<p>STEP 3.於欲置頂的文章開頭加入top:true，範例如下：</p>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 作品集</span><br><span class="line">date: 2022-01-07 15:02:32</span><br><span class="line">top: <span class="literal">true</span></span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/03/15/WindowsXPEin2T/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lester Shih">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程式技術書">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/15/WindowsXPEin2T/" class="post-title-link" itemprop="url">透過XPE安裝Windows XP於2T硬碟上(未完成)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2022-03-15 09:43:30" itemprop="dateCreated datePublished" datetime="2022-03-15T09:43:30+08:00">2022-03-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2022-03-17 10:18:46" itemprop="dateModified" datetime="2022-03-17T10:18:46+08:00">2022-03-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">作業系統相關</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <style type="text/css">
+#name{
+    line-height: 1.5em;
+    color: brown;
+    font-size: large;
+    font-weight:bold;
+}
+p{line-height: 1em;}
+</style>
+
+<h2 id="運行環境"><a href="#運行環境" class="headerlink" title="運行環境"></a>運行環境</h2><p>OS:Windows XP 32bit</p>
+
+<hr>
+<h2 id="問題簡述"><a href="#問題簡述" class="headerlink" title="問題簡述"></a>問題簡述</h2><p>嘗試透過XPE安裝Windows XP安裝備份檔Ghost於2T硬碟上</p>
+
+<h2 id="問題解決"><a href="#問題解決" class="headerlink" title="問題解決"></a>問題解決</h2><p>STEP 1.使用Windows XPE USB開機進入XPE系統。</p>
+
+<p>STEP 2.開啟備份工具Ghost。</p>
+
+<p style="color:red">STEP 3.注意：使用Disk from image，所以選擇「Local」->「Disk」->「From Image」，如下圖紅框處：</p>
+<p>PS.若使用Partition from image將造成開機電腦讀不到XP。</p>
+
+<img src="/2022/03/15/WindowsXPEin2T/DiskFromImage.png" class="">
+
+<p>STEP 4.選定來源image檔。</p>
+
+<p>STEP 5.選擇目的端硬碟，也就是2T硬碟。</p>
+
+<p style="color:red">STEP 6.注意：磁碟劃分設定，此部分就分割100G或200G給系統XP不能太大，太大依然造成開機電腦讀不到XP。</p>
       
     </div>
 
@@ -328,7 +1033,7 @@ p{line-height: 1em;}
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-01-11 15:22:03" itemprop="dateModified" datetime="2022-01-11T15:22:03+08:00">2022-01-11</time>
+                <time title="修改時間：2022-01-11 15:22:04" itemprop="dateModified" datetime="2022-01-11T15:22:04+08:00">2022-01-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -419,7 +1124,7 @@ p{line-height: 1em;}
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-01-26 16:50:34" itemprop="dateModified" datetime="2022-01-26T16:50:34+08:00">2022-01-26</time>
+                <time title="修改時間：2022-01-26 16:50:36" itemprop="dateModified" datetime="2022-01-26T16:50:36+08:00">2022-01-26</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -559,7 +1264,7 @@ p{line-height: 1em;}
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2020-09-18 13:51:37 / 修改時間：13:55:27" itemprop="dateCreated datePublished" datetime="2020-09-18T13:51:37+08:00">2020-09-18</time>
+              <time title="創建時間：2020-09-18 13:51:37 / 修改時間：13:55:28" itemprop="dateCreated datePublished" datetime="2020-09-18T13:51:37+08:00">2020-09-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -623,666 +1328,6 @@ p{line-height: 1em;}
 <p>STEP 8.電腦可以正常啟動表示開機磁區已修復。</p>
 
 <img src="/2020/09/18/Windows7CannotLoad/Q6IRptI.png" class="">
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/18/HTML-Skills/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lester Shih">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="程式技術書">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/18/HTML-Skills/" class="post-title-link" itemprop="url">容易遺忘的 HTML 技巧</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-              
-
-              <time title="創建時間：2020-09-18 10:02:43 / 修改時間：10:05:19" itemprop="dateCreated datePublished" datetime="2020-09-18T10:02:43+08:00">2020-09-18</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">HTML相關</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>~~以此頁紀錄幾個不容易記得的HTML技巧~~</p>
-
-<h2 id="Tag部分"><a href="#Tag部分" class="headerlink" title="Tag部分"></a>Tag部分</h2><h3 id="※、標籤pre"><a href="#※、標籤pre" class="headerlink" title="※、標籤pre"></a>※、標籤pre</h3><img src="/2020/09/18/HTML-Skills/tagpre.PNG" class="">
-
-<p><a href="https://medium.com/unalai/%E8%AA%8D%E8%AD%98-html-pre-tag-3be6d5f32e54" target="_blank" rel="noopener">資料來源網址</a></p>
-<h3 id="※、文字表示-刪除線"><a href="#※、文字表示-刪除線" class="headerlink" title="※、文字表示-刪除線"></a>※、文字表示-刪除線</h3><img src="/2020/09/18/HTML-Skills/strikecode.PNG" class="">
-
-<img src="/2020/09/18/HTML-Skills/strikeresult.PNG" class="">
-
-<h3 id="※、等寬字體"><a href="#※、等寬字體" class="headerlink" title="※、等寬字體"></a>※、等寬字體</h3><p>使用tt標籤可將標籤內的文字每一字元等寬，常用於英文(如：<font style="font-family:MingLiU;">'m'</font>與<font style="font-family:MingLiU;">'i'</font>)的寬度在一些字體上甚至大小寫時的差異，中英文或多國語言夾雜時會特別明顯。</p>
-
-<img src="/2020/09/18/HTML-Skills/monospacedexample.PNG" class="">
-
-<h3 id="※、上標文字"><a href="#※、上標文字" class="headerlink" title="※、上標文字"></a>※、上標文字</h3><img src="/2020/09/18/HTML-Skills/superscript.PNG" class="">
-
-<h3 id="※、下標文字"><a href="#※、下標文字" class="headerlink" title="※、下標文字"></a>※、下標文字</h3><img src="/2020/09/18/HTML-Skills/subscript.PNG" class="">
-
-<h3 id="※、del-amp-ins-標籤"><a href="#※、del-amp-ins-標籤" class="headerlink" title="※、del &amp; ins 標籤"></a>※、del &amp; ins 標籤</h3><p>主要用於表示「欲更正文字」(以刪除線表示錯誤的文字並於後方補上正確地文字)的效果：</p>
-
-<img src="/2020/09/18/HTML-Skills/del&ins.PNG" class="">
-
-<h3 id="※、粗體-lt-b-gt-與-lt-strong-gt-vs-斜體-lt-i-gt-、-lt-em-gt-、-lt-dfn-gt-與-lt-cite-gt"><a href="#※、粗體-lt-b-gt-與-lt-strong-gt-vs-斜體-lt-i-gt-、-lt-em-gt-、-lt-dfn-gt-與-lt-cite-gt" class="headerlink" title="※、粗體&lt;b&gt;與&lt;strong&gt;  vs  斜體&lt;i&gt;、&lt;em&gt;、&lt;dfn&gt;與&lt;cite&gt;"></a>※、粗體&lt;b&gt;與&lt;strong&gt;  vs  斜體&lt;i&gt;、&lt;em&gt;、&lt;dfn&gt;與&lt;cite&gt;</h3><p>●、基本上於顯示部分&lt;b&gt;與&lt;strong&gt;同為粗體而&lt;i&gt;與&lt;em&gt;同為斜體；但&lt;strong&gt;與&lt;em&gt;有表示重要之意。</p>
-<p>●、&lt;dfn&gt;於顯示上同為斜體，&lt;dfn&gt;主要用於特殊專有名詞的時候；常搭配屬性title使用，讓使用者可以將滑鼠靠近顯示意思：</p>
-
-<img src="/2020/09/18/HTML-Skills/dfn.PNG" class="">
-
-<p>●、&lt;cite&gt;於顯示上同為斜體，&lt;cite&gt;主要用於引用文的時候：</p>
-
-<img src="/2020/09/18/HTML-Skills/cite.PNG" class="">
-
-<h3 id="※、mark-標籤"><a href="#※、mark-標籤" class="headerlink" title="※、mark 標籤"></a>※、mark 標籤</h3><p>使用mark標籤可將標籤內的文字背景塗上黃色。</p>
-
-<img src="/2020/09/18/HTML-Skills/mark.PNG" class="">
-
-<h3 id="※、縮寫表示"><a href="#※、縮寫表示" class="headerlink" title="※、縮寫表示"></a>※、縮寫表示</h3><p>一般搭配title屬性使用。</p>
-
-<img src="/2020/09/18/HTML-Skills/abbreviation.PNG" class="">
-
-<h3 id="※、縮寫-abbre-vs-acronym"><a href="#※、縮寫-abbre-vs-acronym" class="headerlink" title="※、縮寫 abbre vs acronym"></a>※、縮寫 abbre vs acronym</h3><p>有一個區分的方式以縮寫後大眾念法以縮寫後一個字母一個字母的是abbr；而縮寫後依然以縮寫前作為念法的是acronym。</p>
-
-<img src="/2020/09/18/HTML-Skills/abbrvsacronym.PNG" class="">
-
-<h3 id="※、縮排-lt-blockquote-gt-與短縮排-lt-q-gt"><a href="#※、縮排-lt-blockquote-gt-與短縮排-lt-q-gt" class="headerlink" title="※、縮排&lt;blockquote&gt;與短縮排&lt;q&gt;"></a>※、縮排&lt;blockquote&gt;與短縮排&lt;q&gt;</h3><img src="/2020/09/18/HTML-Skills/blockquote.PNG" class="">
-
-<p>注意：短縮排會於前後加上雙引號「"」</p>
-<img src="/2020/09/18/HTML-Skills/shortquote.PNG" class="">
-
-<h3 id="※、於網頁中放上片段程式語言碼"><a href="#※、於網頁中放上片段程式語言碼" class="headerlink" title="※、於網頁中放上片段程式語言碼"></a>※、於網頁中放上片段程式語言碼</h3><p>若要於網頁上放上片段程式碼可以使用&lt;code&gt;，主要效果為灰色背景並等寬顯示；可能依照每個瀏覽器而不一樣。</p>
-
-<img src="/2020/09/18/HTML-Skills/code.PNG" class="">
-
-<h3 id="※、附錄"><a href="#※、附錄" class="headerlink" title="※、附錄"></a>※、附錄</h3><img src="/2020/09/18/HTML-Skills/tablecollation.PNG" class="">
-
-<p><a href="https://dcdrkim.pixnet.net/blog/post/316291311-html-%3Ccode%3E-%E6%A8%99%E7%B1%A4" target="_blank" rel="noopener">表格資料來源</a></p>
-<hr />
-
-<h2 id="Attribute部分"><a href="#Attribute部分" class="headerlink" title="Attribute部分"></a>Attribute部分</h2><h3 id="※、屬性title"><a href="#※、屬性title" class="headerlink" title="※、屬性title"></a>※、屬性title</h3><p>於Tag中使用屬性title與內容值，可定義滑鼠游標移動到該Tag元件並停留時游標右下角顯示的訊息，效果如下：</p>
-<p title="沒有錯啦!!就是這樣!!">請將滑鼠游標移動到此處並停留。</p>
-
-<img src="/2020/09/18/HTML-Skills/ezgif-4-7c4e775891a8.gif" class="">
-
-<h3 id="※、屬性dir"><a href="#※、屬性dir" class="headerlink" title="※、屬性dir"></a>※、屬性dir</h3><p>根據網站 「<a href="https://ithelp.ithome.com.tw/articles/10194726" target="_blank" rel="noopener">Day10：小事之 HTML dir Attribute</a>」的描述：</p>
-<img src="/2020/09/18/HTML-Skills/dir.PNG" class="">
-
-<p>可設定的參數如下表：</p>
-<img src="/2020/09/18/HTML-Skills/dirvalue.PNG" class="">
-
-<p>1.一般預設為由左而右，故很少看到=&gt;主要用於阿拉伯文的網站，因阿拉伯文為由右至左。<br>2.通常搭配&lt;bdo&gt;使用：</p>
-<img src="/2020/09/18/HTML-Skills/bdo.PNG" class="">
-
-
-
-
-
-<hr />
-
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="※、特殊符號於html中的表示"><a href="#※、特殊符號於html中的表示" class="headerlink" title="※、特殊符號於html中的表示"></a>※、特殊符號於html中的表示</h3><p>撰寫html語法程式有些像「&lt;」、「&gt;」等特殊字元用於語法本身之中(有類似關鍵字之意)，需使用其他表示方法如下表：</p>
-
-<img src="/2020/09/18/HTML-Skills/htmlspecialmark.PNG" class="">
-
-
-<p>參考資料：<br><a href="https://www.tutorialspoint.com/html/html_formatting.htm" target="_blank" rel="noopener">Tutorialspoint-HTML網站</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/18/HTMLSkills-Table/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lester Shih">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="程式技術書">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/18/HTMLSkills-Table/" class="post-title-link" itemprop="url">容易遺忘的 HTML 技巧-Table</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-
-              <time title="創建時間：2020-09-18 09:33:07" itemprop="dateCreated datePublished" datetime="2020-09-18T09:33:07+08:00">2020-09-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-01-26 16:50:42" itemprop="dateModified" datetime="2022-01-26T16:50:42+08:00">2022-01-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">HTML相關</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>~~以此頁紀錄幾個不容易記得的HTML技巧(Table部分)~~</p>
-
-<h3 id="※、表格屬性Cellpadding-and-Cellspacing-及對應CSS屬性名"><a href="#※、表格屬性Cellpadding-and-Cellspacing-及對應CSS屬性名" class="headerlink" title="※、表格屬性Cellpadding and Cellspacing 及對應CSS屬性名"></a>※、表格屬性Cellpadding and Cellspacing 及對應CSS屬性名</h3><p>●Cellspacing表格四邊padding設定(表格外與其他元素)</p>
-
-
-<p>●Cellpadding表格內儲存格間之距離padding設定</p>
-
-
-<p><a href="http://www.eion.com.tw/Blogger/?Pid=1083" target="_blank" rel="noopener">Cellpadding and Cellspacing資料來源</a></p>
-<hr />
-
-<h3 id="※、表格屬性Colspan-and-Rowspan水平合併儲存格-amp-垂直合併儲存格"><a href="#※、表格屬性Colspan-and-Rowspan水平合併儲存格-amp-垂直合併儲存格" class="headerlink" title="※、表格屬性Colspan and Rowspan水平合併儲存格&amp;垂直合併儲存格"></a>※、表格屬性Colspan and Rowspan水平合併儲存格&amp;垂直合併儲存格</h3>
-
-<hr />
-
-<h3 id="※、表格標題Caption"><a href="#※、表格標題Caption" class="headerlink" title="※、表格標題Caption"></a>※、表格標題Caption</h3><p>顯示於表格上方且會置中</p>
-
-
-<hr />
-
-<h3 id="※、Table-Header-Body-and-Footer"><a href="#※、Table-Header-Body-and-Footer" class="headerlink" title="※、Table Header, Body, and Footer"></a>※、Table Header, Body, and Footer</h3><p>可直接於&lt;table&gt;中定義，範例如下：</p>
-
-
-<hr />
-
-<h3 id="※、巢狀表格Nested-Tables"><a href="#※、巢狀表格Nested-Tables" class="headerlink" title="※、巢狀表格Nested Tables"></a>※、巢狀表格Nested Tables</h3><p>表格單一儲存格中再放表格：</p>
-
-
-<p><a href="https://www.tutorialspoint.com/html/html_tables.htm" target="_blank" rel="noopener">資料來源</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/24/JSWindowsClose/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lester Shih">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="程式技術書">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/24/JSWindowsClose/" class="post-title-link" itemprop="url">利用JS將子視窗網頁關閉</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-              
-
-              <time title="創建時間：2020-07-24 11:50:26 / 修改時間：11:55:15" itemprop="dateCreated datePublished" datetime="2020-07-24T11:50:26+08:00">2020-07-24</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">JavaScript相關</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <style type="text/css">
-#name{
-    line-height: 1.5em;
-    color: brown;
-    font-size: large;
-    font-weight:bold;
-}
-p{line-height: 1.5em;}
-</style>
-
-<h2 id="運行開發環境與網頁技術"><a href="#運行開發環境與網頁技術" class="headerlink" title="運行開發環境與網頁技術"></a>運行開發環境與網頁技術</h2><p>OS:Windows 7 Professional 64bit</p>
-<p>IDE:Visual Studio 2010 Ultimate</p>
-<p>Web:ASP.NET with C#</p>
-
-<h2 id="問題狀況與目的說明"><a href="#問題狀況與目的說明" class="headerlink" title="問題狀況與目的說明"></a>問題狀況與目的說明</h2><p>撰寫一般需使用資料庫紀錄的網頁時，需擁有新增、刪除、修改、查詢功能；可能於修改時會希望顯示子視窗，此時就會有子視窗開啟關閉的問題。</p>
-
-<h2 id="開啟子視窗網頁"><a href="#開啟子視窗網頁" class="headerlink" title="開啟子視窗網頁"></a>開啟子視窗網頁</h2><p>開啟子視窗網頁可以使用window.showModelDialog，code如下，將預顯示於子視窗網頁網址放於sURL中。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">後端程式碼.aspx.cs</span><br><span class="line">String sScript &#x3D; &quot;&lt;script&gt;window.showModalDialog(&#39;&quot; + sURL + &quot;&#39;,self, &#39;dialogWidth:310px;dialogHeight:620px;scroll:no;status:no;help:no;&#39;);&lt;&#x2F;script&gt;&quot;;</span><br><span class="line">this.Page.ClientScript.RegisterStartupScript(this.Page.GetType(), &quot;Modify&quot;, sScript);</span><br></pre></td></tr></table></figure>
-
-<h2 id="關閉子視窗網頁"><a href="#關閉子視窗網頁" class="headerlink" title="關閉子視窗網頁"></a>關閉子視窗網頁</h2><p>關閉子視窗網頁可以使用window.close，code如下，撰寫於button事件中。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">後端程式碼.aspx.cs</span><br><span class="line">protected void btnCancel_Click(object sender, EventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">    String sScript &#x3D; &quot;&lt;script&gt;window.close();&lt;&#x2F;script&gt;&quot;;</span><br><span class="line">    Page.ClientScript.RegisterStartupScript(this.Page.GetType(), &quot;CloseWin&quot;, sScript);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>由於單純這樣撰寫經測試於IE11以及部分瀏覽器會出現如下圖的問題，且無法成功關閉網頁。</p>
-
-<img src="/2020/07/24/JSWindowsClose/%E6%82%A8%E6%AD%A3%E5%9C%A8%E6%AA%A2%E8%A6%96%E7%9A%84%E7%B6%B2%E9%A0%81%E5%98%97%E8%A9%A6%E8%A6%81%E9%97%9C%E9%96%89%E8%A6%96%E7%AA%97.PNG" class="">
-
-<p>於子網頁前端head中加入以下一行程式即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">前端程式碼.aspx</span><br><span class="line">&lt;base target&#x3D;&quot;_self&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
-<p><a href="http://blog.sina.com.cn/s/blog_98ccdd3001012c6e.html" target="_blank" rel="noopener">資料來源</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/24/VirtualenvInstallPackage/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lester Shih">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="程式技術書">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/24/VirtualenvInstallPackage/" class="post-title-link" itemprop="url">虛擬環境安裝套件錯誤問題解決</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-              
-
-              <time title="創建時間：2020-07-24 11:41:05 / 修改時間：11:42:33" itemprop="dateCreated datePublished" datetime="2020-07-24T11:41:05+08:00">2020-07-24</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Django%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">Django相關</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <style type="text/css">
-#name{
-    line-height: 1.5em;
-    color: brown;
-    font-size: large;
-    font-weight:bold;
-}
-p{line-height: 1em;}
-</style>
-
-<h2 id="運行環境"><a href="#運行環境" class="headerlink" title="運行環境"></a>運行環境</h2><p>OS:Windows 7 Professional 64bit</p>
-<p>Python 3.8.2</p>
-
-<hr>
-<h2 id="問題簡述"><a href="#問題簡述" class="headerlink" title="問題簡述"></a>問題簡述</h2><p>於虛擬環境中安裝套件「pymssql」發生錯誤：</p>
-
-<img src="/2020/07/24/VirtualenvInstallPackage/InstallPackageError.png" class="">
-
-<h2 id="問題解決"><a href="#問題解決" class="headerlink" title="問題解決"></a>問題解決</h2><p>可事先下載Package檔，以pymssql為例：</p>
-
-<img src="/2020/07/24/VirtualenvInstallPackage/PymssqlPackageDownload.png" class="">
-
-<p>根據自己作業系統環境下載相對應版本(一般Python虛擬環境套件副檔名均為whl)！</p>
-
-<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pymssql" target="_blank" rel="noopener">Python外部套件網址</a></p>
-<p>下載完成後，將該檔放置於自己想要放的目錄(此放置於C:\Users\yu64859\Documents\Django Projects)接著透過安裝本地端套件語法安裝：</p>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">...&gt;pip instal 套件所在路徑(須包含套件檔名)</span><br></pre></td></tr></table></figure>
-
-<p>以此為例：</p>
-
-<img src="/2020/07/24/VirtualenvInstallPackage/InstallLocalPackage.png" class="">
-
-<p>本地安裝的套件於pip freeze套件清單回顯示如下：</p>
-
-<img src="/2020/07/24/VirtualenvInstallPackage/InstallSucess.png" class="">
-
-<p><a href="https://zhuanlan.zhihu.com/p/38996653" target="_blank" rel="noopener">虛擬環境安裝本地套件方法教學來源網址</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/30/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lester Shih">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="程式技術書">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/30/hello-world/" class="post-title-link" itemprop="url">Hexo</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-
-              <time title="創建時間：2020-04-30 22:59:14" itemprop="dateCreated datePublished" datetime="2020-04-30T22:59:14+08:00">2020-04-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-01-11 14:57:45" itemprop="dateModified" datetime="2022-01-11T14:57:45+08:00">2022-01-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/26/DjangoVirtualenv/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lester Shih">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="程式技術書">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/26/DjangoVirtualenv/" class="post-title-link" itemprop="url">Django Virtualenv 虛擬環境建置</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-
-              <time title="創建時間：2020-03-26 15:31:16" itemprop="dateCreated datePublished" datetime="2020-03-26T15:31:16+08:00">2020-03-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2020-09-26 15:01:56" itemprop="dateModified" datetime="2020-09-26T15:01:56+08:00">2020-09-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Django%E7%9B%B8%E9%97%9C/" itemprop="url" rel="index"><span itemprop="name">Django相關</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <style type="text/css">
-#name{
-    line-height: 1.5em;
-    color: brown;
-    font-size: large;
-    font-weight:bold;
-}
-p{line-height: 1em;}
-</style>
-
-
-<h2 id="運行環境"><a href="#運行環境" class="headerlink" title="運行環境"></a>運行環境</h2><p>OS:Windows 10 Professional 64bit/Windows 7 Professional 64bit</p>
-<p>Python 3.8.2</p>
-
-<hr>
-<h2 id="建置步驟"><a href="#建置步驟" class="headerlink" title="建置步驟"></a>建置步驟</h2><h3 id="安裝Python"><a href="#安裝Python" class="headerlink" title="安裝Python"></a>安裝Python</h3><p>1.到官網下載Python安裝檔</p>
-
-<p><a href="https://www.python.org/downloads/" target="_blank" rel="noopener">官網</a> – 截至2020/03/26最新版本3.8.2</p>
-<img src="/2020/03/26/DjangoVirtualenv/PythonDownload.PNG" class="">
-
-<p>2.進行安裝</p>
-<p>安裝過程中會自動帶入電腦環境變數Path中</p>
-
-<img src="/2020/03/26/DjangoVirtualenv/PathCheck.PNG" class="">
-
-<p>3.安裝完成可以打開Windows命令提示字元檢查版本</p>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">...&gt;python</span><br></pre></td></tr></table></figure>
-
-<img src="/2020/03/26/DjangoVirtualenv/PythonCMD.PNG" class="">
-
-<h3 id="開始建置虛擬環境"><a href="#開始建置虛擬環境" class="headerlink" title="開始建置虛擬環境"></a>開始建置虛擬環境</h3><p>1.建立虛擬環境安裝位置(一般建於我的文件中)</p>
-
-<img src="/2020/03/26/DjangoVirtualenv/FolderConfig.PNG" class="">
-
-<p>2.以系統管理員身分開啟命令提示字元到該路徑</p>
-
-<img src="/2020/03/26/DjangoVirtualenv/VirtualenvCMD.PNG" class="">
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\&gt;python -m venv c:\path\to\myenv</span><br></pre></td></tr></table></figure>
-
-<img src="/2020/03/26/DjangoVirtualenv/VirtualenvCreate.PNG" class="">
-
-<p>建立好就會出現該虛擬環境資料夾</p>
-<img src="/2020/03/26/DjangoVirtualenv/VirtualenvDir.PNG" class="">
-
-<hr>
-<h2 id="開始使用"><a href="#開始使用" class="headerlink" title="開始使用"></a>開始使用</h2><h3 id="使用虛擬環境"><a href="#使用虛擬環境" class="headerlink" title="使用虛擬環境"></a>使用虛擬環境</h3><p>1.命令提示字元進入Scipts目錄中</p>
-
-<img src="/2020/03/26/DjangoVirtualenv/Scripts.PNG" class="">
-
-<p>2.下activate進入虛擬環境模式(前方會顯示所在虛擬環境名稱)</p>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c:\&gt;activate</span><br></pre></td></tr></table></figure>
-
-<img src="/2020/03/26/DjangoVirtualenv/VirtualenvMode.PNG" class="">
-
       
     </div>
 
@@ -1367,20 +1412,20 @@ p{line-height: 1em;}
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -1397,7 +1442,7 @@ p{line-height: 1em;}
           <h3 class="widget-title">標籤雲</h3>
             <div id="myCanvasContainer" class="widget tagcloud">
               <canvas width="200" height="250" id="resCanvas" style="width=100%">
-                <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Andorid/" rel="tag">Andorid</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Eclipse/" rel="tag">Eclipse</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-7/" rel="tag">Windows 7</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%90%E8%A6%96%E7%AA%97%E7%B6%B2%E9%A0%81%E9%97%9C%E9%96%89/" rel="tag">子視窗網頁關閉</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%95%AB%E9%9D%A2%E6%8A%95%E5%BD%B1/" rel="tag">畫面投影</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88/" rel="tag">網頁設計</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/" rel="tag">虛擬環境</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/" rel="tag">虛擬環境建置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%A3%E6%8E%A5SQL-Server/" rel="tag">連接SQL Server</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Andorid/" rel="tag">Andorid</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Eclipse/" rel="tag">Eclipse</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring-Boot/" rel="tag">Spring Boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-7/" rel="tag">Windows 7</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-XP/" rel="tag">Windows XP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Xampp/" rel="tag">Xampp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%90%E8%A6%96%E7%AA%97%E7%B6%B2%E9%A0%81%E9%97%9C%E9%96%89/" rel="tag">子視窗網頁關閉</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%95%AB%E9%9D%A2%E6%8A%95%E5%BD%B1/" rel="tag">畫面投影</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88/" rel="tag">網頁設計</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/" rel="tag">虛擬環境</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/" rel="tag">虛擬環境建置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%A3%E6%8E%A5SQL-Server/" rel="tag">連接SQL Server</a><span class="tag-list-count">1</span></li></ul>
               </canvas>
             </div>
         </div>
@@ -1420,7 +1465,7 @@ p{line-height: 1em;}
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

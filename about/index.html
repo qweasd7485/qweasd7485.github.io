@@ -28,7 +28,7 @@
 <meta property="og:description" content="#name{     line-height: 1.5em;     color: brown;     font-size: large;     font-weight:bold; } #work{     line-height: 1.5em;     color: brown;     font-size: medium;     font-weight: bold;     } #ed">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2020-03-24T07:45:43.000Z">
-<meta property="article:modified_time" content="2022-01-10T01:33:28.937Z">
+<meta property="article:modified_time" content="2022-03-23T08:46:51.520Z">
 <meta property="article:author" content="Lester Shih">
 <meta name="twitter:card" content="summary">
 
@@ -204,22 +204,74 @@
     font-size: medium;
     font-weight: bold;
 }
+#skillarea{
+    line-height: 1.5em;
+    color: brown;
+    font-size: medium;
+    font-weight: bold;
+}
 #interestarea{
     line-height: 1.5em;
     color: brown;
     font-size: medium;
     font-weight: bold;
 }
+#history{
+    line-height: 1.5em;
+    color: brown;
+    font-size: medium;
+    font-weight: bold;
+}
 p{line-height: 1em;}
+
+
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
 </style>
 
-<p id="name">施旻廷(Lester Shih)</p>
+<p id="name">萊斯特(Lester Shih)</p>
 
 <p id="work">工作經驗</p>
-<p>燁聯鋼鐵股份有限公司</p>
+<p>燁聯鋼鐵股份有限公司(106.6-至今)</p>
 <p>MES系統工程師(MES Engineer)</p>
 <p>電話：07-6232255 分機 8933</p>
-<p>信箱：0124093@nkust.edu.tw</p>
+<p>信箱：yu66168@mail.yusco.com.tw</p>
 
 <hr>
 <p id="education">教育程度</p>
@@ -227,14 +279,55 @@ p{line-height: 1em;}
 <p>高中：國立鹿港高級中學 商業經營科</p>
 
 <hr>
-<p id="interestarea">興趣領域</p>
+<p id="skillarea">技術領域</p>
 
 <ul>
 <li>網頁設計：HTML5, CSS3, JavaScript, jQuery, Django, ASP.NET, Hexo, Angular</li>
 <li>程式設計：Java, Python, C#, Visual Basic</li>
 <li>資料庫：MS SQL Server, Oracle</li>
 </ul>
+<hr>
+<p id="history">更新履歷</p>
 
+<ul id="myUL">
+  <li><span class="caret">1.0</span>
+    <ul class="nested">
+      <li>1.建立基本Hexo網頁並套入主題Next。</li>
+      <li><span class="caret">2.新增以下文章：</span></li>
+        <ul class="nested">
+          <li>Black Tea</li>
+          <li>White Tea</li>
+        </ul>
+      <li><span class="caret">Tea</span>
+        <ul class="nested">
+          <li>Black Tea</li>
+          <li>White Tea</li>
+          <li><span class="caret">Green Tea</span>
+            <ul class="nested">
+              <li>Sencha</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
+            </ul>
+          </li>
+        </ul>
+      </li>  
+    </ul>
+  </li>
+</ul>
+
+
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+        });
+    }
+</script>
       </div>
       
       
@@ -309,20 +402,20 @@ p{line-height: 1em;}
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -339,7 +432,7 @@ p{line-height: 1em;}
           <h3 class="widget-title">標籤雲</h3>
             <div id="myCanvasContainer" class="widget tagcloud">
               <canvas width="200" height="250" id="resCanvas" style="width=100%">
-                <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Andorid/" rel="tag">Andorid</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Eclipse/" rel="tag">Eclipse</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-7/" rel="tag">Windows 7</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%90%E8%A6%96%E7%AA%97%E7%B6%B2%E9%A0%81%E9%97%9C%E9%96%89/" rel="tag">子視窗網頁關閉</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%95%AB%E9%9D%A2%E6%8A%95%E5%BD%B1/" rel="tag">畫面投影</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88/" rel="tag">網頁設計</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/" rel="tag">虛擬環境</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/" rel="tag">虛擬環境建置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%A3%E6%8E%A5SQL-Server/" rel="tag">連接SQL Server</a><span class="tag-list-count">1</span></li></ul>
+                <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Andorid/" rel="tag">Andorid</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Eclipse/" rel="tag">Eclipse</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring-Boot/" rel="tag">Spring Boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-7/" rel="tag">Windows 7</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-XP/" rel="tag">Windows XP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Xampp/" rel="tag">Xampp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%90%E8%A6%96%E7%AA%97%E7%B6%B2%E9%A0%81%E9%97%9C%E9%96%89/" rel="tag">子視窗網頁關閉</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%95%AB%E9%9D%A2%E6%8A%95%E5%BD%B1/" rel="tag">畫面投影</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88/" rel="tag">網頁設計</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/" rel="tag">虛擬環境</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/" rel="tag">虛擬環境建置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%A3%E6%8E%A5SQL-Server/" rel="tag">連接SQL Server</a><span class="tag-list-count">1</span></li></ul>
               </canvas>
             </div>
         </div>
@@ -362,7 +455,7 @@ p{line-height: 1em;}
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
